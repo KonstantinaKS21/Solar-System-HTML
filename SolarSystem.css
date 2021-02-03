@@ -1,0 +1,39 @@
+body
+{
+	background-image: url('seamless.jpg');
+	width: 1000px;
+	margin: auto;
+	padding: 0 20px;
+	text-align: justify;
+	font-family: 'Cambria', serif;
+	color: White;
+}
+
+div.fragment
+{
+	margin-top: 1em;
+	border: solid 1px Black;
+	padding: 0px 20px 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px Black inset;
+	background: linear-gradient(#1b233a,#2a375c,#3d4f82);
+}
+
+h1
+{
+	font-size: 3.5em;
+	font-family: Garamond, 'Bookman Old Style', serif;
+	text-align: center;
+	margin: 0.25em;
+}
+
+
+
+canvas
+{
+	display: block;
+	margin: 3px;
+	border: solid 2px #010f38;
+	background-image: url('seamless.jpg');
+	border-radius: 10px;
+}
