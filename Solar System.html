@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Слънчева система</title>
 
-	<!-- зареждане на библиотеката СУИКА и стиловете -->
+	
     <script src="suica.min.js"></script>
     <link rel="stylesheet" type="text/css" href="SolarSystem.css">
 	
@@ -16,7 +16,7 @@
             orthographic(-10000,10000);
             lookAt([-1,1,0],[0,0,0],[0,0,1]);
             
-            star = sphere([0,0,0],120).custom({ 
+            earth = sphere([0,0,0],120).custom({ 
                 image: new Suica.Image('full.png')
             });
 			
