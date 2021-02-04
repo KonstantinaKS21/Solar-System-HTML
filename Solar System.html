@@ -11,39 +11,15 @@
 	<script>
         function main()
         {
-            p = new Suica();
            
-			orthographic(-1000,1000);
-            lookAt([0,0,10],[0,0,0],[0,1,0]);
+            p = new Suica();
+            orthographic(-10000,10000);
+            lookAt([-1,1,0],[0,0,0],[0,0,1]);
             
             star = sphere([0,0,0],120).custom({ 
-                image: new Suica.Image()
-            })
+                image: new Suica.Image('full.png')
+            });
 			
-			planet = sphere([0,0,0],40);
-			planet.color = [0.3,0.7,1];
-			
-			moon1 = sphere([0,0,0],20);
-			moon1.color = [0.7,0.7,0.7];
-			
-			moon2 = sphere([0,0,0],10);
-			moon2.color = [0.7,0.7,0.7];
-			
-			p.nextFrame = loop;
-        }
-
-        function loop()
-		{
-			t = Suica.time;
-
-			planet.center[0] = 250*Math.cos(t);
-			planet.center[1] = 300*Math.sin(t);
-
-			moon1.center[0] = planet.center[0] + 90*Math.cos(4*t);
-			moon1.center[1] = planet.center[1] + 90*Math.sin(4*t);
-
-			moon2.center[0] = planet.center[0] + 90*Math.cos(3*t);
-			moon2.center[1] = planet.center[1] + 90*Math.sin(3*t);
 		}
     </script>
 
