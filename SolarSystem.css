@@ -1,21 +1,23 @@
 body
 {
 	background-image: url('seamless.jpg');
-	width: 1000px;
+	width: 1900px;
 	margin: auto;
 	padding: 0 20px;
 	text-align: justify;
 	font-family: 'Cambria', serif;
+	font-size: 1.5em;
 	color: White;
 }
 
-div.fragment
+.fragment
 {
 	margin-top: 1em;
+	margin-bottom: 1em;
 	border: solid 1px Black;
 	padding: 0px 20px 20px;
 	border-radius: 10px;
-	box-shadow: 0 0 10px Black inset;
+	box-shadow: 0 0 15px Black inset;
 	background: linear-gradient(#1b233a,#2a375c,#3d4f82);
 }
 
@@ -24,10 +26,44 @@ h1
 	font-size: 3.5em;
 	font-family: Garamond, 'Bookman Old Style', serif;
 	text-align: center;
-	margin: 0.25em;
+	margin: 0.2em;
 }
 
+h2
+{
+	font-family: Garamond, 'Bookman Old Style', serif;
+	text-align: center;
+	margin: 0.2em;
+	font-size: 2.5em;
+}
 
+h3
+{
+	font-family: Garamond, 'Bookman Old Style', serif;
+	margin: 0.2em;
+	font-size: 1.75em;
+
+}
+
+img
+{
+	margin-bottom: 3em;
+	float: right;
+	left: -100px;
+	width: 350px;
+}
+
+.button
+{
+	position: relative; 
+	top: -1000px; 
+	left: 40px;
+	background-color: #3d4f82;
+	color:white; 
+	width: 10em;
+	font-size: large;
+	border-radius: 10px;
+}
 
 canvas
 {
@@ -37,3 +73,91 @@ canvas
 	background-image: url('seamless.jpg');
 	border-radius: 10px;
 }
+
+
+
+.menu
+{
+	margin-bottom: 1em;
+	border-top: dotted  #010f38 3px;
+	border-bottom: dotted  #010f38 3px;
+	padding: 8px;
+	text-align: center;
+}
+
+#main
+{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding: 2px 5px 1px 5px;
+	background-color: #010f38;
+	color: White;
+	display: inline;
+	font-family: 'Cambria', serif;
+	font-size: 1.2em;
+	border-radius: 7px;
+}
+
+:link,:visited
+{
+	color: white;
+	text-decoration: none;
+}
+
+li.menu:hover, a:hover 
+{
+	color: white;
+	background-color: SandyBrown;
+}
+
+.textBox
+{
+    position: relative;
+    left: 40px;
+    top: -300px;
+	background-color: transparent;
+    /*background-color: #3d4f82;*/
+    color: white;
+    width: 400px;
+    height: 140px;
+    font-size: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.backButton
+{
+	position: left;
+	background-color: #010f38;
+	border: #010f38, 3px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding: 2px 5px 1px 5px;
+	font-family: 'Cambria', serif;
+	font-size: 1em;
+	border-radius: 7px;
+	margin-top: 0.5em;
+}
+
+table
+{
+	border: solid #010f38 3px;
+	text-align: center;
+	padding: 2px;
+	border-radius: 10px;
+}
+
+table td, th
+{
+	border: dashed #010f38 2px;
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 5px;
+}
+
+
+/*span:hover
+{
+	background-color: #3d4f82;
+}*/

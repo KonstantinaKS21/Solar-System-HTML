@@ -6,23 +6,8 @@
 
 	
     <script src="suica.min.js"></script>
+	<script src="SolarSystem.js"></script>
     <link rel="stylesheet" type="text/css" href="SolarSystem.css">
-	
-	<script>
-        function main()
-        {
-           
-            p = new Suica();
-            orthographic(-10000,10000);
-            lookAt([-1,1,0],[0,0,0],[0,0,1]);
-            
-            earth = sphere([0,0,0],120).custom({ 
-                image: new Suica.Image('full.png')
-            });
-			
-		}
-    </script>
-
 </head>
 
 
@@ -30,6 +15,18 @@
 <body onload="main()">
     <div class="fragment">
     <h1>&#10031; Слънчевата система &#10031;</h1>
+    
+    <ul class="menu">
+        <li id="main"><a href="Sun.html" target="blank">Слънце</a></li>
+        <li id="main"><a href="Mercury.html" target="blank1">Меркурий</a></li>
+        <li id="main"><a href="Venus.html" target="blank2">Венера</a></li>
+        <li id="main"><a href="Earth.html" target="blank3">Земя</a></li>
+        <li id="main"><a href="Mars.html" target="blank4">Марс</a></li>
+        <li id="main"><a href="Jupiter.html" target="blank5">Юпитер</a></li>
+        <li id="main"><a href="Saturn.html" target="blank6">Сатурн</a></li>
+        <li id="main"><a href="Uranus.html" target="blank7">Уран</a></li>
+        <li id="main"><a href="Neptune.html" target="blank8">Нептун</a></li>
+    </ul>
 
     <p>Слънчевата система представлява звезда и всички обекти, които пътуват около нея - планети, естествени спътници като нашата Луна, астероидни пояси, комети и метеороиди. 
    Слънчевата ни система е част от спирална галактика, известна като Млечния път. 
@@ -52,15 +49,16 @@
     Една AU е равна на разстоянието между слънцето и Земята, което е около 150 милиона км (93 милиона мили).
     </p>
 
-    <canvas width="950" height="550"></canvas>
-
+    <canvas width="1850" height="950"></canvas>
 
 </div>
+<div>
+    <button class="button" onclick = "togglePlanetsSpin()">Движение на планетите</button> 
+    <!--<button class="button" onclick = "toggleRadius()">Промени радиуса на планета</button>-->
+</div>
 
-
-
-
-
-
+<div class="textBox">
+   <p><span id="obj"></span></p>
+</div>
 
 </body>
